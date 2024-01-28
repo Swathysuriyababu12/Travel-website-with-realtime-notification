@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
-import { useState} from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+    const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -13,15 +16,21 @@ const Navbar = () => {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mynavbar"
+            data-toggle="collapse"
+            data-target="#mynavbar"
+            aria-expanded={!isNavCollapsed ? true : false}
+            aria-label="Toggle navigation"
+            onClick={handleNavCollapse}
           >
             <span className="bars">
               <i className="fa-solid fa-bars"></i>
             </span>
           </button>
 
-          <div className="collapse navbar-collapse" id="mynavbar">
+          <div
+            className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+            id="mynavbar"
+          >
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <Link to="/" className="nav-link active">
