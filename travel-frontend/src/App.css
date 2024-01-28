@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /*home  */
+  font-family: "Roboto", sans-serif;
+
+
+}
+
+#mynavbar {
+  background-color: rgb(243, 247, 246)
+}
+
+#logo {
+  /* font-size: 36px; */
+  /* font-weight: 700; */
+  color: green;
+  text-shadow: 0px 1px 1px green;
+  margin-bottom: 5px;
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+
+.nav-item .nav-link:hover {
+  background-color: green;
+  color: white;
+}
+
+.bars {
+  color: green
+}
+
+
+/* home section css starts */
+.home {
+  background-image: url("./homes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.changecontent::after {
+  content: "";
+  /* https: //www.site24x7.com/tools/color-code-picker.html */
+  color: #fed008;
+  text-shadow: 0px, 1px 1px black;
+  animation: changetxt 10s infinite linear;
+}
+
+.booknow {
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.booknow:hover {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width:450px) {
+  .home {
+    background-position: 50%
+  }
+}
+
+@keyframes changetxt {
+  0% {
+    content: "Kerala";
+  }
+
+  10% {
+    content: "Gujarat";
+  }
+
+  20% {
+    content: "Rajasthan";
+  }
+
+  30% {
+    content: "kedarnath";
+  }
+
+  40% {
+    content: "Kedarkantha";
+  }
+
+  50% {
+    content: "shimla";
+  }
+
+  60% {
+    content: "Ooty";
+  }
+
+  70% {
+    content: "Himachal";
+  }
+
+  80% {
+    content: "meghalaya";
+  }
+
+  90% {
+    content: "Jaipur";
+  }
+
+  100% {
+    content: "TamilNadu";
+  }
+}
+
+/* home section css ends */
+
+/* book section css */
+
+.main-text span {
+  color: #fed008
+}
+
+.book {
+  background-color: rgb(241, 247, 248);
+}
+
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black
+}
+
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .submit {
+  background-color: #fed008;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.book .submit:hover {
+  background-color: #c4a20d;
+}
+
+
+/* packages section css */
+
+.packages .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+  border-radius: 10px;
+}
+
+/* .packages .car .card-body{
+    background: transparent;
+} */
+
+.checked {
+  color: #fed008
+}
+
+.unchecked {
+  color: rgb(78, 78, 78)
+}
+
+
+.packages .booknow {
+  background-color: #fed008;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.packages .booknow:hover {
+  background-color: #c4a20d;
+}
+
+
+/* service section css */
+.services {
+  background-color: rgb(241, 247, 248);
+  ;
+}
+
+.services .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.services i {
+  color: #fed008
+}
+
+
+/* About section */
+
+.about {
+  background-color: rgb(241, 247, 248);
+
+}
+
+.about .card {
+  border-radius: 15px;
+}
+
+.about .card img {
+  border-radius: 15px;
+  border: none;
+}
+
+#about-btn {
+  background-color: #fed008;
+  color: white;
+}
+
+/* footer section css */
+
+.social-links i {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.social-links i:hover {
+  background-color: #fed008;
+}
