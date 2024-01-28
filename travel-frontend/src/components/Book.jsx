@@ -36,7 +36,7 @@ const Book = () => {
 
   useEffect(() => {
     // Listen for 'chat message' events from the server
-    const newSocket = io("http://localhost:5000"); // Replace with your server's URL
+    const newSocket = io("https://travel-amc4.onrender.com"); // Replace with your server's URL
     setSocket(newSocket);
     newSocket.on("form submitted", function (form) {
       console.log(form);

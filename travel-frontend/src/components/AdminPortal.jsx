@@ -19,7 +19,7 @@ const AdminPortal = () => {
   const [recentActivities, setRecentActivities] = useState([]);
 
   useEffect(() => {
-    const socket = io("http://localhost:5000"); // Replace with your server's URL
+    const socket = io("https://travel-amc4.onrender.com"); // Replace with your server's URL
 
     // Listen for 'statistics' event from the server
     // socket.on('statistics', (data) => {
